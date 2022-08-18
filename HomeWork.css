@@ -1,0 +1,280 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navibar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    background-color:black;
+}
+
+#navibar h2,#navibar h3 {
+    color:white;
+    margin-left:20px;
+    margin-top:20px;
+}
+h1 {
+    text-align: center;
+    padding-top:30px;
+}
+
+#navibar div {
+    display: flex;
+    flex-direction: column;
+    margin-top:25%;
+}
+
+#navibar a {
+    color: white;
+    margin: 20px;
+    font-size: 20px;
+    border: 2px solid white;
+    text-decoration: none;
+    padding: 5px;
+}
+/*=================評價系統==================*/
+#campus3 {
+    border: 3px solid #191b03;
+    width: 800px;
+    height:200px;
+    padding:15px;
+    background-color:#bccb7c;
+    margin:auto;
+    margin-bottom: 40%;
+}
+
+#picStars {
+    display: flex;
+    justify-content: center;
+}
+
+#campus3 .locating {
+    display: flex;
+    margin-top: 25px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#campus3 img {
+    margin:0.5px;
+    cursor:pointer;
+    height:80px;
+}
+
+#campus3 ul{
+    font-size:18px;
+}
+
+.normal {
+    border: 4px solid gray;
+    border-radius: 20px;
+}
+
+.ranked {
+    border: 4px solid aqua;
+    border-radius: 50%;
+}
+
+.unranked {
+    border: 4px solid red;
+    border-radius: 0;
+}
+/*=================廣告輪播==================*/
+#campus4 {
+    width: 1100px;
+    height:400px;
+    padding: 15px;
+    margin:auto;
+    margin-bottom: 40%;
+}
+#campus4 .divBtns {
+    position:relative;
+    height:200px;
+    width:1100px;
+}
+
+#campus4 ul{
+    margin-top:20px;
+    color:deeppink;
+    list-style-image:url("images/dusula.gif");
+    list-style-position:inside;
+}
+
+#divMainImg {
+    width: 1100px;
+    height:304px;
+    margin: auto;
+    border:2px solid #d56a55;
+}
+
+#divSubImg{
+    margin-top:20px;
+}
+
+#divMainImg, #divSubImg {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.imgM {
+    position: relative;
+    height: 300px;
+}
+
+.imgS {
+    margin-top:10px;
+    position: relative;
+    width: 200px;
+    padding:10px;
+}
+
+.imgS:hover{
+    transform: translateY(-10px);
+}
+
+#imgM0, #imgM2 {
+    filter: blur(6px);
+}
+
+#imgM0:hover, #imgM2:hover {
+    filter: blur(3px);
+}
+
+.imgFrame {
+    box-shadow: inset;
+    background-color: #d56aa5ff;
+}
+
+#nextImg, #preImg, #resetFrame, #stopMove {
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    margin: 20px;
+    color: lightpink;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #333;
+    cursor: pointer;
+}
+
+#nextImg:hover, #preImg:hover, #resetFrame:hover, #stopMove:hover{
+    background-color: lightpink;
+    color: #333;
+}
+
+#nextImg {
+    left: 985px;
+    top: 20px;
+}
+
+#preImg {
+    left: 775px;
+    top: 20px;
+}
+
+.moveAnimeN {
+    transition: all 0.3s linear;
+    transform: translateX(-100%);
+}
+
+.moveAnimeP {
+    transition: all 0.3s linear;
+    transform: translateX(100%);
+}
+
+#resetFrame {
+    left: 880px;
+    top: -5px;
+}
+
+#stopMove {
+    left: 880px;
+    top: 40px;
+}
+
+.frameInfo {
+    margin-left: 5%;
+}
+/*======================郵遞區號================================*/
+#campus5 {
+    justify-content:center;
+    margin: 15px;
+    margin-left:30%;
+}
+
+#divTable {
+    margin-left: 30%;
+}
+
+#divSelects{
+    display:flex;
+    align-items:end;
+}
+
+#divSelects > select {
+    min-width: 60px;    
+    width: fit-content;
+}
+
+.city {
+    display: flex;
+    align-items: center;
+    border-top: 1px blue solid;
+    border-left: 1px blue solid;
+    border-right: 1px blue solid;
+    width: fit-content;
+}
+.city:last-child {
+    border-bottom: 1px blue solid;
+}
+
+.city > div {
+    border-left: 1px blue solid;
+}
+
+.city > div > div {
+    width:100px;
+    display: flex;
+    align-items:end;
+    border-top:1px blue solid;
+}
+.city > div > div:first-child{
+    border-top:none;
+}
+
+.city > div > div div:first-child {
+    width:35px;
+    font-size:20px;
+    border-right: 1px blue solid;
+}
+
+.navFixed {
+    position: fixed;
+    top: 0;
+}
+.btnFixed {
+    position: fixed;
+    bottom: 20px;
+}
+
+#campus5 ul {
+    color: gray;
+    list-style-image: url("images/dusula.gif");
+    list-style-position: inside;
+}
+
+.btn-primary{
+    color:blue;
+    font-size:16px;
+    width:fit-content;
+}
+
+
+
+
